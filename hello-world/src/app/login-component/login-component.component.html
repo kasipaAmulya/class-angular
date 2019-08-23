@@ -1,5 +1,5 @@
 <h1>Login Form</h1>
 username:<input type="text" [(ngModel)]="username"/><br/>
 password:<input type="text" [(ngModel)]="pwd"/><br/>
-<button (click)="Login()">login</button>
-<span>{{loginStatus}}</span>
+<button #id (click)="Login(id)" >login</button>
+<span #status>{{loginStatus}}</span>

@@ -1,6 +1,6 @@
 <h1>Registeration Form</h1>
 username:<input type="text" [(ngModel)]="username"/><br/>
 password:<input type="text" [(ngModel)]="pwd"/><br/>
-<button (click)="Register()">Register</button>
-<span>{{ registerStatus}}</span>
-<span>{{username}} {{pwd}}</span>
+<button (click)="Register(status)">Register</button>
+<span #status>{{ registerStatus}}</span>
+<span >{{username}} {{pwd}}</span>

@@ -14,9 +14,11 @@ export class RegisterComponent implements OnInit {
   public username:string;
   public pwd:string;
   public registerStatus:string;
-  public Register(){
+  public Register(pStatus){
     // if(this.username=='amulya' && this.pwd=='sai'){
       this.registerStatus="registeration successful ";
+      pStatus.style="color:green";
+
     }
   }
 

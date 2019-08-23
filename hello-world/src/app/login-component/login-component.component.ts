@@ -14,11 +14,12 @@ export class LoginComponentComponent implements OnInit {
   public username:string;
   public pwd:string;
   public loginStatus:string;
-  public Login(id){
+  public Login(id:any,img:any){
     id.disabled=true;
     if(this.username=='amulya' && this.pwd=='sai'){
       this.loginStatus="Login successful";
       id.style="color:green";
+     img.src="../../assets/images1.jpg"
     }
     else{
       this.loginStatus="login unsuccessful";

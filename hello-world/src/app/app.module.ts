@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { RegisterComponent } from './register/register.component';
+import { IfComponent } from './if/if.component';
+import { ForComponent } from './for/for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     LoginComponentComponent,
-    RegisterComponent
+    RegisterComponent,
+    IfComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule,

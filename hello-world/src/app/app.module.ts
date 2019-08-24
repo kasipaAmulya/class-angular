@@ -8,6 +8,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { RegisterComponent } from './register/register.component';
 import { IfComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
+import { ArrayComponent } from './array/array.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ForComponent } from './for/for.component';
     LoginComponentComponent,
     RegisterComponent,
     IfComponent,
-    ForComponent
+    ForComponent,
+    ArrayComponent
   ],
   imports: [
     BrowserModule,

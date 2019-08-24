@@ -1,0 +1,51 @@
+
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">TeadyBear</a>
+            </div>
+            <button  class="btn btn-danger navbar-btn" (click)="userOperation('+')">first</button>
+            <button class="btn btn-primary navbar-btn" (click)="userOperaton('-')">second</button>
+            <button class="btn btn-success navbar-btn" (click)="userOperation('*')">third </button>
+            <button class="btn btn-info navbar-btn" (click)="userOperation('/')"> fourth</button>
+          </div>
+        </nav>
+        
+        <div class="container">
+          <!-- <h2>Navbar Button</h2> -->
+          <!-- <p>Use the navbar-btn class on a button to vertically align (same padding as links) it inside the navbar.</p> -->
+        </div>
+        
+        
+        
+Enter value for num1:<input type="number"  [(ngModel)]="num1"/>
+Enter value for num2:<input type="number" [(ngModel)]="num2"/>
+<!-- <hr>
+<button  class="btn btn-danger navbar-btn" (click)="userOperation('+')"><app-example></app-example></button>
+<button class="btn btn-primary navbar-btn" (click)="userOperaton=('-')"><app-example1></app-example1></button>
+<button class="btn btn-success navbar-btn" (click)="userOperation('*')"> <app-example2></app-example2></button>
+<button class="btn btn-info navbar-btn" (click)="userOperation('/')"> <app-example3></app-example3>
+</button> -->
+
+<div  [ngSwitch]="currentOperator">
+        <div  *ngSwitchCase="'+'">
+          <app-example></app-example>
+            <!-- Addition:{{num1+num2}} -->
+        </div>
+        <div *ngSwitchCase="'-'">
+          <app-example1></app-example1>
+            <!-- Subtraction:{{num1-num2}} -->
+        </div>
+        <div  *ngSwitchCase="'*'">
+          <app-example2></app-example2>
+            <!-- Multiplication:{{num1*num2}} -->
+        </div>
+        <div  *ngSwitchCase="'/'">
+          <app-example3></app-example3>
+                <!-- Division:{{num1/num2}} -->
+        </div>
+         <div *ngSwitchDefault>
+
+         </div>
+</div>
